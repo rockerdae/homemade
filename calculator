@@ -1,0 +1,35 @@
+print("""*********************
+ 
+Hesap Makinasına HoşGeldiniz
+
+Yapabileceğiniz işlemler;
+
+1. Toplama İşlemi
+
+2. Çıkartma İşlenmi
+
+3. Çarpma İşlemi
+
+4. Bölme İşlemi
+**********************
+""")
+
+a = int(input("Birinci Sayınızı Giriniz: "))
+b = int(input(" İkinci Sayınızı Giriniz : "))
+
+işlem = input("Yapmak istediğiniz işlemi giriniz :")
+
+if işlem == "1":
+    print("birinci sayı {} ile ikinci sayının {} toplamı {} . ".format(a,b,a+b))
+
+elif işlem == "2":
+    print("birinci sayı {} dan ikinci sayının {} farkı {} ".format(a,b,a-b))
+
+elif işlem == "3":
+    print("birinci sayı {} ile ikinci sayının {} çarpımı {} ".format(a,b,a * b))
+
+elif işlem == "4":
+    print("birinci sayı {} ile ikinci sayının {} bölümü {} ".format(a,b,a / b))
+
+else:
+    print("Geçersiz İşlem, Yeniden Deneyiniz")
